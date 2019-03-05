@@ -6,6 +6,9 @@ class Dept(models.Model):
     def __str__(self):
         return self.Dept_name
 
+
+
+  
     
 class Employee(models.Model):
     dept=models.ForeignKey(Dept,on_delete=models.CASCADE)
